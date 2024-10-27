@@ -485,20 +485,6 @@ body {
                     </h3>
                 </div>
                 <div class="skill-item">
-                    <img alt="Blender logo" height="80"
-                        src="png-transparent-blender-computer-icons-rendering-blender-3d-computer-graphics-text-orange-thumbnail-removebg-preview.png"
-                        width="80" />
-                    <h3>
-                        Blender
-                    </h3>
-                </div>
-                <div class="skill-item">
-                    <img alt="Canva logo" height="80" src="canva-logo-removebg-preview.png" width="80" />
-                    <h3>
-                        Canva
-                    </h3>
-                </div>
-                <div class="skill-item">
                     <img alt="Adobe Illustrator logo" height="80"
                         src="png-transparent-adobe-ai-illustrator-logo-logos-logos-and-brands-icon-thumbnail-removebg-preview.png"
                         width="80" />
@@ -562,16 +548,16 @@ body {
 
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-        
+        // Function to toggle the navigation menu
         const toggleMenu = () => {
             const navLinks = document.querySelector('.nav-link');
             navLinks.classList.toggle('active'); // Toggle the 'active' class
         };
-        
+        // Attach the click event listener to the hamburger menu
         const hamburger = document.querySelector('.hamburger');
         hamburger.addEventListener('click', toggleMenu);
       
-        
+        // Smooth scrolling for anchor links
         document.querySelectorAll('.navbar a').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
                 e.preventDefault();
@@ -586,7 +572,7 @@ body {
         const portfolioItems = document.querySelectorAll('.portfolio-item');
         const skillItems = document.querySelectorAll('.skill-item');
       
-        
+        // Add hover effects to portfolio items
         portfolioItems.forEach(item => {
             item.addEventListener('mouseenter', function() {
                 this.style.transform = 'scale(1.05)';
